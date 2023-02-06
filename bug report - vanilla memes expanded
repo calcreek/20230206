@@ -1,0 +1,15 @@
+System.NullReferenceException: Object reference not set to an instance of an object
+  at RimWorld.RoleRequirement_NotChild.Met (Verse.Pawn p, RimWorld.Precept_Role role) [0x00000] in <617d4a4b3c1842ffb4eb3fd1337f915c>:0 
+  at RimWorld.Precept_Role.RequirementsMet (Verse.Pawn p) [0x0000d] in <617d4a4b3c1842ffb4eb3fd1337f915c>:0 
+  at VanillaMemesExpanded.GameComponent_BestMeleeLeaderTracker.GameComponentTick () [0x00161] in <ab53058d15f64853a2d8892ca1367fea>:0 
+  at (wrapper dynamic-method) Verse.GameComponentUtility.Verse.GameComponentUtility.GameComponentTick_Patch1()
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch4 (string)
+(wrapper dynamic-method) Verse.GameComponentUtility:Verse.GameComponentUtility.GameComponentTick_Patch1 ()
+(wrapper dynamic-method) Verse.TickManager:Verse.TickManager.DoSingleTick_Patch8 (Verse.TickManager)
+Verse.TickManager:TickManagerUpdate ()
+(wrapper dynamic-method) Verse.Game:Verse.Game.UpdatePlay_Patch2 (Verse.Game)
+(wrapper dynamic-method) Verse.Root_Play:Verse.Root_Play.Update_Patch0 (Verse.Root_Play)
+//---------------
+// error thrown presumably when the game attempted to execute a raid, then looped indefinately. Persisted across reloads and full game restarts. 
+//---------------
